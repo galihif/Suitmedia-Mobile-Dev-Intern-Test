@@ -9,5 +9,5 @@ import javax.inject.Inject
 class FirstViewModel @Inject constructor(
     private val repo:MainRepository
 ): ViewModel() {
-    fun test() = repo.test()
+    fun checkPalindrome(sentence:String):Boolean = sentence.reversed() == sentence
 }
